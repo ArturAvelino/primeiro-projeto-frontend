@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-one: #000000;
+    --color-two: #F6F6F6;
+    --color-three: #22D4FD;
+    --color-hover: #272727;
+
+    --font-main: 'Krona One', sans-serif;
+    --font-two: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: black;
+    color: var(--color-two);
+}
+
+.header {
+    padding: 2% 0% 0% 15%
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link {
+    font-family: var(--font-two);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-three);
+    text-decoration: none;
+
+}
+
+.presentation {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.presentation_content_title {
+    font-family: var(--font-main);
+    font-size: 2.25rem;
+}
+
+.title-destaque {
+    color: var(--color-three);
+}
+
+.presentation_content_text {
+    font-family: var(--font-two);
+    font-size: 1.5rem;
+}
+
+.presentation_links_subtitle {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 1.5rem
+}
+
+.presentation_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px
+}
+
+.links_class{
+    /* background-color: #22D4FD; */
+    border: 2px solid var(--color-three);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    padding: 21.5px 0;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-two);
+    font-family: var(--font-two);
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.links_class:hover {
+    background-color: var(--color-hover);
+}
+
+.presentation_image {
+    width: 70%;
+    padding-left: 10%;
+}
+
+.footer {
+    color: #000000;
+    background-color: var(--color-three);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-two);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%
+    }
+    .header_menu {
+        justify-content: center;
+
+    }
+    
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%
+    }
+
+    .presentation_image {
+        justify-content: center;
+    }
+
+    .presentation_content {
+        width: auto;
+    }
+    
+}
